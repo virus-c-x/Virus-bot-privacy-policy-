@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIRUS - Privacy Policy</title>
+  <meta name="description" content="Official Privacy Policy for the VIRUS Discord Activity, developed independently by VIRUS TEAM. Learn how user privacy is protected.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="VIRUS Discord Activity - Privacy Policy">
+  <meta property="og:description" content="Review the Privacy Policy for the VIRUS Discord Activity developed by VIRUS TEAM. No personal data collected.">
+  <meta property="og:type" content="website">
+  <style>
+    /* Reset & CSS Variables */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #090514;
+      --bg-secondary: #110b24;
+      --bg-card: #160f2e;
+      --bg-card-hover: #1c133a;
+      --border-subtle: #2b1c4f;
+      --border-accent: #5b2899;
+      --border-focus: #9d4edd;
+      
+      --purple-light: #d8b4fe;
+      --purple-accent: #a855f7;
+      --purple-glow: rgba(168, 85, 247, 0.25);
+      --purple-deep: #4c1d95;
+      
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --badge-bg: rgba(168, 85, 247, 0.12);
+      --badge-border: rgba(168, 85, 247, 0.35);
+      --badge-text: #c084fc;
+
+      --alert-bg: rgba(139, 92, 246, 0.08);
+      --alert-border: rgba(139, 92, 246, 0.3);
+
+      --success-bg: rgba(16, 185, 129, 0.08);
+      --success-border: rgba(16, 185, 129, 0.3);
+      --success-text: #34d399;
+
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      --transition: all 0.2s ease-in-out;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.65;
+      font-size: 16px;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(126, 34, 206, 0.22) 0%, transparent 60%),
+        radial-gradient(circle at 10% 40%, rgba(88, 28, 135, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(109, 40, 217, 0.1) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    a {
+      color: var(--purple-light);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-decoration-color: var(--purple-accent);
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation / Header Bar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(9, 5, 20, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 16px 0;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #7c3aed, #9d4edd);
+      box-shadow: 0 0 16px var(--purple-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 19px;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .brand-subtitle {
+      font-size: 0.75rem;
+      color: var(--purple-light);
+      letter-spacing: 0.04em;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-nav-link {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+
+    .btn-nav-link:hover {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-return {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: 9999px;
+      background-color: rgba(168, 85, 247, 0.12);
+      border: 1px solid var(--badge-border);
+      color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-return:hover {
+      background-color: rgba(168, 85, 247, 0.25);
+      border-color: var(--purple-accent);
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px var(--purple-glow);
+    }
+
+    /* Hero / Document Header */
+    .hero {
+      padding: 48px 0 28px;
+      text-align: left;
+    }
+
+    .pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.775rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: var(--badge-text);
+      margin-bottom: 16px;
+    }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--purple-accent);
+      box-shadow: 0 0 6px var(--purple-accent);
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 740px;
+      line-height: 1.6;
+    }
+
+    /* Quick Meta Info Box */
+    .meta-box {
+      margin: 24px 0 32px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 18px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .meta-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    .meta-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* Privacy Highlight / Zero-Collection Box */
+    .privacy-highlight-card {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(22, 15, 46, 0.9) 100%);
+      border: 1px solid var(--success-border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .highlight-icon {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid var(--success-border);
+      color: var(--success-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 17px;
+    }
+
+    .highlight-body {
+      font-size: 0.925rem;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .highlight-body strong {
+      color: #ffffff;
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Table of Contents */
+    .toc-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .toc-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 10px 16px;
+    }
+
+    .toc-list li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      padding: 4px 0;
+    }
+
+    .toc-list li a:hover {
+      color: var(--purple-light);
+      transform: translateX(3px);
+    }
+
+    .toc-num {
+      color: var(--purple-accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      min-width: 20px;
+    }
+
+    /* Content Sections */
+    .legal-content {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-bottom: 60px;
+    }
+
+    .section-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 30px;
+      scroll-margin-top: 90px;
+      transition: border-color 0.2s ease;
+    }
+
+    .section-card:hover {
+      border-color: rgba(168, 85, 247, 0.4);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .section-number {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--purple-accent);
+      background-color: rgba(168, 85, 247, 0.12);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(168, 85, 247, 0.25);
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .section-body {
+      color: var(--text-muted);
+      font-size: 0.975rem;
+      line-height: 1.7;
+    }
+
+    .section-body p {
+      margin-bottom: 16px;
+    }
+
+    .section-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-body ul {
+      margin: 14px 0 18px 24px;
+      list-style-type: disc;
+    }
+
+    .section-body li {
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    .section-body li strong {
+      color: var(--text-main);
+    }
+
+    /* Subsections */
+    .subsection-heading {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 20px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .subsection-heading::before {
+      content: "";
+      width: 4px;
+      height: 14px;
+      background-color: var(--purple-accent);
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    /* Notice & Comparison Grids */
+    .notice-box {
+      background-color: rgba(22, 15, 46, 0.7);
+      border-left: 3px solid var(--purple-accent);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 18px 0;
+      font-size: 0.925rem;
+      color: #cbd5e1;
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .data-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .data-card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .data-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 0;
+    }
+
+    /* Contact Block */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(22, 15, 46, 0.95), rgba(39, 20, 77, 0.65));
+      border: 1px solid var(--border-accent);
+      border-radius: 14px;
+      padding: 28px;
+      margin-top: 14px;
+    }
+
+    .contact-badge {
+      display: inline-block;
+      background: rgba(168, 85, 247, 0.2);
+      color: #ffffff;
+      font-family: monospace;
+      font-size: 1rem;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px dashed var(--purple-accent);
+      letter-spacing: 0.05em;
+      margin: 12px 0 16px;
+      user-select: all;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      border-top: 1px solid var(--border-subtle);
+      background-color: rgba(9, 5, 20, 0.95);
+      padding: 40px 0 30px;
+      font-size: 0.875rem;
+      color: var(--text-dim);
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--purple-light);
+    }
+
+    .footer-copy {
+      font-size: 0.815rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 1.85rem;
+      }
+
+      .section-card {
+        padding: 20px;
+      }
+
+      .meta-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .toc-list {
+        grid-template-columns: 1fr;
+      }
+
+      .header-content {
+        justify-content: center;
+      }
+
+      .header-actions {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="container header-content">
+      <a href="#top" class="brand" title="VIRUS Activity - Privacy Policy">
+        <div class="brand-logo">V</div>
+        <div class="brand-text">
+          <span class="brand-title">VIRUS</span>
+          <span class="brand-subtitle">DEVELOPED BY VIRUS TEAM</span>
+        </div>
+      </a>
+      
+      <div class="header-actions">
+        <a href="terms.html" class="btn-nav-link" title="Read Terms of Service">Terms of Service</a>
+        <a href="https://discord.com" class="btn-return" title="Return to VIRUS on Discord">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Return to VIRUS Activity
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Legal Document Content -->
+  <main class="container" id="top">
+    
+    <!-- Hero Header -->
+    <div class="hero">
+      <div class="pill-tag">
+        <span class="pill-dot"></span>
+        Privacy & Data Transparency
+      </div>
+      <h1 class="hero-title">Privacy Policy</h1>
+      <p class="hero-subtitle">
+        This Privacy Policy details our unwavering commitment to player privacy, transparent data practices, and the technical principles governing the VIRUS Discord Activity.
+      </p>
+    </div>
+
+    <!-- Meta Details Box -->
+    <div class="meta-box">
+      <div class="meta-item">
+        <span class="meta-label">Application</span>
+        <span class="meta-value">VIRUS (Discord Activity)</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Developer</span>
+        <span class="meta-value">VIRUS TEAM</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Effective Date</span>
+        <span class="meta-value">September 18, 2026</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Data Retention</span>
+        <span class="meta-value" style="color: #34d399;">Zero Persistent PII</span>
+      </div>
+    </div>
+
+    <!-- Quick Core Commitment Card -->
+    <div class="privacy-highlight-card">
+      <div class="highlight-icon">✓</div>
+      <div class="highlight-body">
+        <strong>Core Privacy Commitment: No Personal Data Collected</strong>
+        VIRUS is architected with a strict privacy-by-design standard. We do not harvest, monetize, sell, or maintain persistent databases of your personal identity, messages, or financial information. Any session data received is transient, volatile, and purged immediately upon exiting the Activity.
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="toc-card" aria-label="Table of Contents">
+      <h2 class="toc-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--purple-accent);">
+          <line x1="8" y1="6" x2="21" y2="6"></line>
+          <line x1="8" y1="12" x2="21" y2="12"></line>
+          <line x1="8" y1="18" x2="21" y2="18"></line>
+          <line x1="3" y1="6" x2="3.01" y2="6"></line>
+          <line x1="3" y1="12" x2="3.01" y2="12"></line>
+          <line x1="3" y1="18" x2="3.01" y2="18"></line>
+        </svg>
+        Table of Contents
+      </h2>
+      <ul class="toc-list">
+        <li><a href="#section-1"><span class="toc-num">01.</span> Introduction</a></li>
+        <li><a href="#section-2"><span class="toc-num">02.</span> Data Collection</a></li>
+        <li><a href="#section-3"><span class="toc-num">03.</span> Use of Information</a></li>
+        <li><a href="#section-4"><span class="toc-num">04.</span> Data Security</a></li>
+        <li><a href="#section-5"><span class="toc-num">05.</span> User Rights</a></li>
+        <li><a href="#section-6"><span class="toc-num">06.</span> Third-Party Services</a></li>
+        <li><a href="#section-7"><span class="toc-num">07.</span> Changes to the Privacy Policy</a></li>
+        <li><a href="#section-8"><span class="toc-num">08.</span> Contact Information</a></li>
+      </ul>
+    </nav>
+
+    <!-- Document Body Sections -->
+    <div class="legal-content">
+
+      <!-- Section 1 -->
+      <section class="section-card" id="section-1">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Introduction</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Welcome to the official Privacy Policy for <strong>VIRUS</strong>, an interactive multiplayer Discord Activity developed, operated, and maintained by <strong>VIRUS TEAM</strong> ("we," "us," or "our"). 
+          </p>
+          <p>
+            VIRUS operates directly within the Discord desktop, web, and mobile clients as an embedded application running inside Discord voice channels and servers via the official Discord Embedded App SDK. We respect the personal privacy of all players and believe that social gaming should be transparent, secure, and entirely devoid of intrusive user surveillance or covert behavioral monetization.
+          </p>
+          <p>
+            This Privacy Policy sets forth our clear standards regarding what minimal information may be handled during an active gameplay session, how that technical context is utilized exclusively to provide real-time game functions, and your rights and controls as a user. By launching, entering, or participating in the VIRUS Activity, you acknowledge the privacy practices outlined herein.
+          </p>
+          <div class="notice-box">
+            VIRUS TEAM is an independent developer group. VIRUS is not owned, operated, sponsored, or directly managed by Discord Inc. Discord's own data processing practices are governed exclusively by the <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Discord Privacy Policy</a>.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section-card" id="section-2">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Data Collection</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            <strong>No personal data is collected or stored unless explicitly stated otherwise.</strong> VIRUS is built on a zero-retention framework. We do not require you to create a proprietary third-party account, enter an email address, provide passwords, link payment methods, or submit any real-world identity documentation to use the Activity.
+          </p>
+          
+          <h3 class="subsection-heading">Information We Do NOT Collect</h3>
+          <ul>
+            <li><strong>No Real-World Personal Identifiers:</strong> We do not collect your real name, physical address, phone number, email address, date of birth, or government ID.</li>
+            <li><strong>No Financial or Payment Data:</strong> We do not collect credit card numbers, bank routing information, or billing records.</li>
+            <li><strong>No Discord Private Data:</strong> We do not access, view, log, or store your Discord private direct messages (DMs), friend lists, server member directories, chat histories, or stored files.</li>
+            <li><strong>No Tracking Cookies or Spyware:</strong> We do not inject persistent tracking cookies, advertising IDs, device fingerprinting scripts, keystroke loggers, or behavioral recording software.</li>
+          </ul>
+
+          <h3 class="subsection-heading">Transient Technical Data Handled During Active Gameplay</h3>
+          <p>
+            To render the multiplayer game inside your Discord voice channel, the Discord Embedded App SDK temporarily delivers standard runtime session context to the Activity. This technical context is processed <strong>strictly in volatile temporary memory (RAM)</strong> for the duration of the active match:
+          </p>
+
+          <div class="data-grid">
+            <div class="data-card">
+              <div class="data-card-title">
+                <span style="color: var(--purple-accent);">●</span> Ephemeral Discord Identifiers
+              </div>
+              <p>Your public Discord User ID, username, and avatar hash are processed temporarily to display your in-game moniker and player icon on the scoreboard during that match.</p>
+            </div>
+            <div class="data-card">
+              <div class="data-card-title">
+                <span style="color: var(--purple-accent);">●</span> Voice Channel & Room Context
+              </div>
+              <p>The Discord Channel ID and Guild (Server) ID are referenced in real-time to group you and your fellow voice channel participants into the same interactive game room.</p>
+            </div>
+            <div class="data-card">
+              <div class="data-card-title">
+                <span style="color: var(--purple-accent);">●</span> Real-Time Gameplay Inputs
+              </div>
+              <p>In-game actions, match coordinates, selections, and match scores are synchronized across players in the session and reset immediately when the round concludes.</p>
+            </div>
+          </div>
+
+          <p>
+            <strong>Zero Persistent Database Storage:</strong> None of the transient technical attributes described above are saved to persistent databases, disk storage, or user profile dossiers. The instant you close the VIRUS Activity or disconnect from the Discord voice channel, your ephemeral session memory is automatically erased.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section-card" id="section-3">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Use of Information</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Because we do not collect personal data, any processing of transient technical session context is strictly limited to the operational necessities of delivering real-time entertainment. Specifically, information is used solely to:
+          </p>
+          <ul>
+            <li><strong>Enable Real-Time Multiplayer Gameplay:</strong> Synchronize game states, events, player actions, and match progression among users currently active in the same Discord voice session.</li>
+            <li><strong>Display Player Interface & Leaderboards:</strong> Render your in-game presence, avatar representation, and current round score on the visual match screen.</li>
+            <li><strong>Ensure Room Routing & Connectivity:</strong> Maintain stable peer-to-peer or server-coordinated state so all channel participants interact within the correct game room.</li>
+            <li><strong>Protect Service Integrity & Prevent Abuse:</strong> Enforce rate limiting against automated packet flooding, botting, script injection, and disruptive exploits to guarantee a fair environment for all players.</li>
+          </ul>
+
+          <h3 class="subsection-heading">Our Strict Commercial Prohibitions</h3>
+          <p>
+            VIRUS TEAM adheres to an unequivocal policy against commercializing user information:
+          </p>
+          <ul>
+            <li>We <strong>NEVER sell, rent, lease, or trade</strong> your session identifiers or gameplay records to data brokers, advertising agencies, or marketing companies.</li>
+            <li>We <strong>DO NOT use</strong> your data for behavioral retargeting, targeted advertisements, or demographic profiling.</li>
+            <li>We <strong>DO NOT train</strong> third-party machine learning models or commercial algorithmic classifiers on your voice, chat, or gameplay inputs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section-card" id="section-4">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Data Security</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            The security of your connection and the integrity of the VIRUS Activity are foundational priorities for VIRUS TEAM. We employ robust technical safeguards aligned with modern software standards:
+          </p>
+          <ul>
+            <li><strong>End-to-End Transport Layer Security (TLS/HTTPS & WSS):</strong> All web assets, styles, scripts, and WebSocket communications between the Discord client interface and hosting endpoints are strictly encrypted using TLS 1.3/HTTPS and secure WebSockets (WSS). Unencrypted plain-text transport is prohibited.</li>
+            <li><strong>Zero-Persistence Architecture:</strong> The most dependable defense against unauthorized database intrusion is refusing to store user databases. By holding zero persistent personal dossiers, there is no centralized database of your personal information subject to compromise.</li>
+            <li><strong>Discord Sandboxed iFrame Environment:</strong> The VIRUS Activity executes within Discord's secure, restricted sandbox iframe. The Activity has no access to your host operating system, local computer files, personal Discord application credentials, or hardware peripherals (such as microphones or webcams) without Discord's explicit client permission dialogs.</li>
+            <li><strong>Routine Dependency Audits:</strong> Third-party software libraries, build tools, and server configurations are routinely scanned and audited against known vulnerabilities and security advisories (CVEs).</li>
+          </ul>
+          <p>
+            While no method of digital transmission or distributed cloud hosting can guarantee absolute, impenetrable security, our minimal-exposure architecture reduces risk to the absolute lowest practical threshold.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="section-card" id="section-5">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title">User Rights</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            VIRUS TEAM respects statutory privacy rights recognized under applicable global frameworks, including the European Union and United Kingdom General Data Protection Regulations (GDPR / UK GDPR), the California Consumer Privacy Act / California Privacy Rights Act (CCPA / CPRA), and similar international data privacy statutes.
+          </p>
+          <p>
+            Depending on your jurisdiction, you may possess specific rights regarding personal data:
+          </p>
+          <ul>
+            <li><strong>Right to Know & Access:</strong> You have the right to request confirmation of whether personal data is processed. As documented in this policy, VIRUS does not maintain or store personal data records regarding individual users.</li>
+            <li><strong>Right to Erasure ("Right to Be Forgotten"):</strong> Because all in-game session data is volatile and purged automatically when you exit the Activity, your data is erased as a standard design feature. If you have communicated with VIRUS TEAM via email for support or feedback, you may request permanent deletion of that email communication at any time.</li>
+            <li><strong>Right to Object & Restrict Processing:</strong> You have unconditional control over your participation. You can cease all processing immediately by closing the Activity window or exiting the Discord voice channel.</li>
+            <li><strong>Right to Non-Discrimination:</strong> We will never discriminate, degrade service quality, or impose financial penalties on any user for exercising their statutory privacy rights.</li>
+          </ul>
+          <p>
+            To submit a privacy inquiry or exercise any applicable rights regarding direct correspondence, please reach out to us using the contact details provided in Section 8.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="section-card" id="section-6">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title">Third-Party Services</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            VIRUS operates as a Discord Activity and leverages specific trusted infrastructure providers to deliver web assets and connectivity. Below is a disclosure of third-party platforms involved:
+          </p>
+          
+          <h3 class="subsection-heading">1. Discord Inc. (Discord Platform & SDK)</h3>
+          <p>
+            VIRUS is integrated into Discord via the Discord Embedded App SDK. Discord provides user authentication tokens, voice channel room routing, and the sandboxed runtime frame. Your Discord account, voice channel activity, and platform relationship are governed directly by Discord Inc. We strongly recommend reviewing the <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Discord Terms of Service</a> and the <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Discord Privacy Policy</a>.
+          </p>
+
+          <h3 class="subsection-heading">2. Static Hosting & Edge Infrastructure</h3>
+          <p>
+            Static front-end files (HTML, CSS, images, and audio assets) and legal policy documents may be hosted on edge distribution networks such as GitHub Pages (GitHub Inc. / Microsoft Corporation) or Cloudflare. These infrastructure providers may generate standard web server access logs (such as connecting IP addresses, browser user agent strings, and request timestamps) strictly for DDoS prevention, threat mitigation, and network reliability under their respective privacy policies.
+          </p>
+
+          <div class="notice-box">
+            VIRUS does not incorporate external social network tracking pixels, Google Analytics, Meta ad SDKs, or third-party behavioral telemetry aggregators.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="section-card" id="section-7">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <h2 class="section-title">Changes to the Privacy Policy</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            VIRUS TEAM reserves the right to amend, update, or revise this Privacy Policy periodically to reflect enhancements to the Activity, updates to Discord's Embedded App SDK guidelines, changes in our infrastructure, or evolving legal and regulatory mandates.
+          </p>
+          <p>
+            When revisions occur, we will update the <strong>Effective Date</strong> prominently at the top and bottom of this document. In the event of material modifications that substantively alter our data practices, we will provide conspicuous notice via the VIRUS Activity loading screen, our official repository, or Discord community announcement channels prior to the changes taking effect.
+          </p>
+          <p>
+            Your continued launching, access, or utilization of the VIRUS Activity following the publication of any revised Privacy Policy confirms your acknowledgment and acceptance of the revised practices. We encourage you to review this policy periodically.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="section-card" id="section-8">
+        <div class="section-header">
+          <span class="section-number">08</span>
+          <h2 class="section-title">Contact Information</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            If you have any questions, comments, feedback, or formal privacy inquiries regarding this Privacy Policy or the data handling practices of the VIRUS Activity, please contact the <strong>VIRUS TEAM</strong> development representatives directly:
+          </p>
+          
+          <div class="contact-card">
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 8px;">VIRUS TEAM — Privacy & Compliance</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 6px;">
+              For privacy verification, data inquiries, or security vulnerability disclosures:
+            </p>
+            <div class="contact-badge" id="contact-email-badge">
+              [CONTACT EMAIL]
+            </div>
+            <p style="color: var(--text-dim); font-size: 0.85rem; margin-top: 10px; margin-bottom: 0;">
+              Please replace <code>[CONTACT EMAIL]</code> with your designated support address (e.g. <code>privacy@yourdomain.com</code> or official support inbox) when hosting this file. Inquiries are generally reviewed within 3 to 5 business days.
+            </p>
+          </div>
+
+          <div class="notice-box" style="margin-top: 24px;">
+            For issues concerning your overarching Discord user account, Discord Nitro subscriptions, or voice channel connectivity, please reach out directly to <a href="https://support.discord.com" target="_blank" rel="noopener noreferrer">Discord Support</a>.
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#top">Back to Top</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="#section-2">Data Collection</a>
+        <a href="#section-4">Data Security</a>
+        <a href="#section-8">Contact Us</a>
+        <a href="https://discord.com" target="_blank" rel="noopener noreferrer">VIRUS on Discord</a>
+      </div>
+      
+      <p class="footer-copy">
+        VIRUS is an independent Discord Activity developed by VIRUS TEAM.<br>
+        Not affiliated with, sponsored by, or endorsed by Discord Inc. Discord is a registered trademark of Discord Inc.<br>
+        Effective Date: September 18, 2026. All rights reserved.
+      </p>
+
+      <a href="https://discord.com" class="btn-return" style="margin-top: 10px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Return to VIRUS Activity
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
