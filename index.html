@@ -3,647 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIRUS - Privacy Policy & Terms of Service</title>
-  <meta name="description" content="Official Privacy Policy and Terms of Service for the VIRUS Discord Activity developed by VIRUS TEAM. Hosted on GitHub Pages." />
-  <meta property="og:title" content="VIRUS - Privacy Policy & Terms of Service" />
+  <title>VIRUS - Privacy Policy &amp; Terms of Service</title>
+  <meta name="description" content="Official Privacy Policy and Terms of Service for the VIRUS Discord Activity developed by VIRUS TEAM. Ready for GitHub Pages." />
+  <meta property="og:title" content="VIRUS - Privacy Policy &amp; Terms of Service" />
   <meta property="og:description" content="Official Privacy Policy and Terms of Service for the VIRUS Discord Activity developed by VIRUS TEAM." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <meta name="theme-color" content="#090514" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237c3aed'/><text x='50%' y='68%' font-size='55' font-weight='900' fill='white' font-family='sans-serif' text-anchor='middle'>V</text></svg>" />
-
-  <style>
-    :root {
-      --bg-base: #090514;
-      --bg-surface: #120926;
-      --bg-card: #160f2e;
-      --bg-card-hover: #1f143d;
-      --border-subtle: rgba(168, 85, 247, 0.2);
-      --border-focus: rgba(168, 85, 247, 0.6);
-      --purple-primary: #7c3aed;
-      --purple-accent: #a855f7;
-      --purple-light: #c084fc;
-      --purple-glow: rgba(168, 85, 247, 0.25);
-      --text-main: #f8fafc;
-      --text-muted: #cbd5e1;
-      --text-dim: #94a3b8;
-      --emerald-accent: #10b981;
-      --emerald-glow: rgba(16, 185, 129, 0.15);
-      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      background-color: var(--bg-base);
-      color: var(--text-main);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    body {
-      background-color: var(--bg-base);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden;
-      background-image: 
-        radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 50%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
-      background-attachment: fixed;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px;
-      width: 100%;
-    }
-
-    /* GitHub Pages Ready Top Banner */
-    .top-banner {
-      background: rgba(22, 11, 46, 0.95);
-      border-bottom: 1px solid var(--border-subtle);
-      padding: 10px 16px;
-      font-size: 0.8rem;
-      color: var(--purple-light);
-    }
-
-    .top-banner-inner {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .top-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 600;
-      color: #ffffff;
-    }
-
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: var(--emerald-accent);
-      box-shadow: 0 0 10px var(--emerald-accent);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-
-    .top-links {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .top-link-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 5px 10px;
-      border-radius: 6px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-decoration: none;
-      background: rgba(124, 58, 237, 0.2);
-      border: 1px solid var(--border-subtle);
-      color: var(--purple-light);
-      transition: var(--transition);
-      cursor: pointer;
-    }
-
-    .top-link-btn:hover {
-      background: rgba(124, 58, 237, 0.4);
-      color: #ffffff;
-      border-color: var(--purple-accent);
-    }
-
-    /* Navigation Header */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(9, 5, 20, 0.85);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border-subtle);
-      padding: 14px 0;
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-    }
-
-    .brand-logo {
-      width: 38px;
-      height: 38px;
-      background: linear-gradient(135deg, var(--purple-primary), var(--purple-accent));
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 1.25rem;
-      color: #ffffff;
-      box-shadow: 0 4px 12px var(--purple-glow);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .brand-title {
-      font-weight: 800;
-      font-size: 1.1rem;
-      color: #ffffff;
-      letter-spacing: 0.05em;
-      line-height: 1.2;
-    }
-
-    .brand-subtitle {
-      font-size: 0.7rem;
-      color: var(--purple-light);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .header-controls {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    /* Tab Switcher */
-    .tab-switcher {
-      display: flex;
-      background: #140b2a;
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 3px;
-    }
-
-    .tab-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-dim);
-      padding: 8px 16px;
-      border-radius: 7px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: var(--transition);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .tab-btn:hover {
-      color: #ffffff;
-    }
-
-    .tab-btn.active {
-      background: var(--purple-primary);
-      color: #ffffff;
-      box-shadow: 0 2px 8px var(--purple-glow);
-    }
-
-    .btn-return {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(124, 58, 237, 0.15);
-      border: 1px solid rgba(168, 85, 247, 0.4);
-      color: #ffffff;
-      padding: 8px 16px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .btn-return:hover {
-      background: rgba(124, 58, 237, 0.35);
-      border-color: var(--purple-accent);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 14px var(--purple-glow);
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 36px 0 24px;
-    }
-
-    .pill-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      background: rgba(168, 85, 247, 0.12);
-      border: 1px solid rgba(168, 85, 247, 0.3);
-      border-radius: 999px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--purple-light);
-      margin-bottom: 16px;
-    }
-
-    .pill-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--purple-accent);
-      box-shadow: 0 0 8px var(--purple-accent);
-    }
-
-    .hero-title {
-      font-size: 2.5rem;
-      font-weight: 900;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-      color: #ffffff;
-      margin-bottom: 12px;
-    }
-
-    .hero-lead {
-      font-size: 1.05rem;
-      color: var(--text-dim);
-      max-width: 720px;
-      line-height: 1.6;
-    }
-
-    /* Meta Details Card */
-    .meta-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 14px;
-      padding: 18px 24px;
-      margin: 24px 0 32px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    }
-
-    .meta-item-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-dim);
-      margin-bottom: 4px;
-      font-weight: 700;
-    }
-
-    .meta-item-val {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--text-main);
-    }
-
-    .meta-highlight {
-      color: var(--emerald-accent);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    /* Highlight Banner */
-    .highlight-card {
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(22, 15, 46, 0.6));
-      border: 1px solid rgba(16, 185, 129, 0.4);
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin-bottom: 32px;
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    .highlight-card-terms {
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(22, 15, 46, 0.6));
-      border: 1px solid rgba(168, 85, 247, 0.4);
-    }
-
-    .highlight-icon {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      background: rgba(16, 185, 129, 0.2);
-      border: 1px solid var(--emerald-accent);
-      color: var(--emerald-accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 0.9rem;
-    }
-
-    .highlight-card-terms .highlight-icon {
-      background: rgba(168, 85, 247, 0.2);
-      border-color: var(--purple-accent);
-      color: var(--purple-light);
-    }
-
-    /* Fast Quick Links Bar */
-    .quick-bar {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 14px 18px;
-      margin-bottom: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .quick-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .direct-file-links {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .file-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(124, 58, 237, 0.15);
-      border: 1px solid var(--border-subtle);
-      color: var(--purple-light);
-      padding: 4px 12px;
-      border-radius: 6px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .file-badge:hover {
-      background: rgba(124, 58, 237, 0.35);
-      border-color: var(--purple-accent);
-      color: #ffffff;
-    }
-
-    /* Section Cards */
-    .section-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      padding: 28px;
-      margin-bottom: 24px;
-      scroll-margin-top: 90px;
-      transition: var(--transition);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .section-card:hover {
-      border-color: var(--border-focus);
-      box-shadow: 0 6px 24px var(--purple-glow);
-    }
-
-    .section-header {
-      display: flex;
-      align-items: baseline;
-      gap: 14px;
-      padding-bottom: 14px;
-      margin-bottom: 18px;
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .section-num {
-      font-family: monospace;
-      font-size: 0.75rem;
-      font-weight: 800;
-      color: var(--purple-light);
-      background: rgba(124, 58, 237, 0.25);
-      padding: 3px 8px;
-      border-radius: 6px;
-      border: 1px solid rgba(168, 85, 247, 0.3);
-    }
-
-    .section-title {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: #ffffff;
-      letter-spacing: -0.01em;
-    }
-
-    .section-body {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-    }
-
-    .section-body p {
-      margin-bottom: 14px;
-    }
-
-    .section-body p:last-child {
-      margin-bottom: 0;
-    }
-
-    .section-body ul {
-      margin: 14px 0 16px 24px;
-    }
-
-    .section-body li {
-      margin-bottom: 8px;
-    }
-
-    .section-body strong {
-      color: #ffffff;
-    }
-
-    .notice-box {
-      background: rgba(124, 58, 237, 0.1);
-      border-left: 3px solid var(--purple-accent);
-      padding: 14px 18px;
-      border-radius: 0 8px 8px 0;
-      margin: 16px 0;
-      font-size: 0.9rem;
-      color: #e2e8f0;
-    }
-
-    .notice-box a {
-      color: var(--purple-light);
-      text-decoration: underline;
-    }
-
-    .mini-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin: 16px 0;
-    }
-
-    .mini-card {
-      background: #110b24;
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 14px;
-    }
-
-    .mini-card-title {
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--purple-light);
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .mini-card-text {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      line-height: 1.5;
-    }
-
-    /* Contact Card */
-    .contact-box {
-      background: linear-gradient(135deg, rgba(22, 15, 46, 0.9), rgba(39, 20, 77, 0.6));
-      border: 1px solid var(--border-focus);
-      border-radius: 14px;
-      padding: 24px;
-      margin-top: 18px;
-    }
-
-    .contact-badge {
-      display: inline-block;
-      background: rgba(124, 58, 237, 0.3);
-      border: 1px dashed rgba(168, 85, 247, 0.7);
-      padding: 8px 18px;
-      border-radius: 8px;
-      font-family: monospace;
-      font-size: 1.05rem;
-      color: #ffffff;
-      letter-spacing: 0.05em;
-      margin: 10px 0;
-      user-select: all;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: auto;
-      border-top: 1px solid var(--border-subtle);
-      background: rgba(9, 5, 20, 0.98);
-      padding: 40px 0 30px;
-      font-size: 0.85rem;
-      color: var(--text-dim);
-    }
-
-    .footer-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 18px;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .footer-links a, .footer-links button {
-      color: var(--text-dim);
-      text-decoration: none;
-      background: none;
-      border: none;
-      font-size: 0.85rem;
-      font-family: inherit;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-
-    .footer-links a:hover, .footer-links button:hover {
-      color: var(--purple-light);
-    }
-
-    .footer-copy {
-      font-size: 0.8rem;
-      line-height: 1.6;
-      max-width: 650px;
-    }
-
-    /* Views */
-    .doc-view {
-      display: none;
-    }
-
-    .doc-view.active {
-      display: block;
-    }
-
-    /* Responsive */
-    @media (max-width: 640px) {
-      .hero-title {
-        font-size: 1.85rem;
-      }
-      .section-card {
-        padding: 20px;
-      }
-      .header-content {
-        justify-content: center;
-      }
-      .header-controls {
-        width: 100%;
-        justify-content: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Pure CSS Tab Controllers: Hidden Radio Buttons (Zero JavaScript) -->
+  <input type="radio" name="doc-tab" id="tab-privacy-radio" class="tab-radio" checked />
+  <input type="radio" name="doc-tab" id="tab-terms-radio" class="tab-radio" />
 
   <!-- Top GitHub Pages Bar -->
   <aside class="top-banner" aria-label="Status Bar">
@@ -655,12 +29,10 @@
       <div class="top-links">
         <span style="font-size: 0.75rem; color: var(--text-dim);">Standalone Files:</span>
         <a href="privacy.html" class="top-link-btn" title="Open standalone privacy.html">
-          <span>privacy.html</span>
-          ↗
+          <span>privacy.html</span> ↗
         </a>
         <a href="terms.html" class="top-link-btn" title="Open standalone terms.html">
-          <span>terms.html</span>
-          ↗
+          <span>terms.html</span> ↗
         </a>
       </div>
     </div>
@@ -678,14 +50,14 @@
       </a>
 
       <div class="header-controls">
-        <!-- Tab Switcher -->
-        <div class="tab-switcher" role="tablist">
-          <button id="btn-tab-privacy" class="tab-btn active" role="tab" aria-selected="true" onclick="switchDoc('privacy')">
+        <!-- Pure CSS Tab Switcher using label elements tied to radio inputs -->
+        <div class="tab-switcher" role="tablist" aria-label="Document Selection">
+          <label for="tab-privacy-radio" class="tab-label" role="tab" tabindex="0">
             Privacy Policy
-          </button>
-          <button id="btn-tab-terms" class="tab-btn" role="tab" aria-selected="false" onclick="switchDoc('terms')">
+          </label>
+          <label for="tab-terms-radio" class="tab-label" role="tab" tabindex="0">
             Terms of Service
-          </button>
+          </label>
         </div>
 
         <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn-return" id="return-link-header">
@@ -706,10 +78,10 @@
         <span>📄 Direct Standalone URLs for Discord App Portal:</span>
       </div>
       <div class="direct-file-links">
-        <a href="privacy.html" class="file-badge" target="_blank">
+        <a href="privacy.html" class="file-badge">
           <span>privacy.html</span> ↗
         </a>
-        <a href="terms.html" class="file-badge" target="_blank">
+        <a href="terms.html" class="file-badge">
           <span>terms.html</span> ↗
         </a>
       </div>
@@ -721,7 +93,7 @@
     <!-- =========================================================================
          VIEW 1: PRIVACY POLICY
          ========================================================================= -->
-    <div id="view-privacy" class="doc-view active">
+    <div id="view-privacy" class="doc-view">
       <!-- Hero -->
       <section class="hero">
         <div class="pill-tag">
@@ -764,6 +136,31 @@
           </div>
         </div>
       </section>
+
+      <!-- Table of Contents -->
+      <nav class="toc-card" aria-label="Privacy Table of Contents">
+        <div class="toc-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"></line>
+            <line x1="8" y1="12" x2="21" y2="12"></line>
+            <line x1="8" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+          </svg>
+          Privacy Policy Sections
+        </div>
+        <ul class="toc-list">
+          <li><a href="#priv-intro"><span class="toc-num">01.</span> Introduction</a></li>
+          <li><a href="#priv-data"><span class="toc-num">02.</span> Data Collection</a></li>
+          <li><a href="#priv-use"><span class="toc-num">03.</span> Use of Information</a></li>
+          <li><a href="#priv-security"><span class="toc-num">04.</span> Data Security</a></li>
+          <li><a href="#priv-rights"><span class="toc-num">05.</span> User Rights</a></li>
+          <li><a href="#priv-thirdparty"><span class="toc-num">06.</span> Third-Party Services</a></li>
+          <li><a href="#priv-changes"><span class="toc-num">07.</span> Changes to Privacy Policy</a></li>
+          <li><a href="#priv-contact"><span class="toc-num">08.</span> Contact Information</a></li>
+        </ul>
+      </nav>
 
       <!-- Privacy Sections -->
       <div class="sections-wrapper">
@@ -990,10 +387,40 @@
         </div>
       </section>
 
+      <!-- Table of Contents -->
+      <nav class="toc-card" aria-label="Terms Table of Contents">
+        <div class="toc-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"></line>
+            <line x1="8" y1="12" x2="21" y2="12"></line>
+            <line x1="8" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+          </svg>
+          Terms of Service Sections
+        </div>
+        <ul class="toc-list">
+          <li><a href="#terms-acceptance"><span class="toc-num">01.</span> Introduction &amp; Acceptance</a></li>
+          <li><a href="#terms-description"><span class="toc-num">02.</span> Description of Application</a></li>
+          <li><a href="#terms-responsibilities"><span class="toc-num">03.</span> User Responsibilities</a></li>
+          <li><a href="#terms-acceptable-use"><span class="toc-num">04.</span> Acceptable &amp; Prohibited Use</a></li>
+          <li><a href="#terms-discord"><span class="toc-num">05.</span> Discord Compliance</a></li>
+          <li><a href="#terms-ip"><span class="toc-num">06.</span> Intellectual Property</a></li>
+          <li><a href="#terms-availability"><span class="toc-num">07.</span> Availability &amp; Changes</a></li>
+          <li><a href="#terms-termination"><span class="toc-num">08.</span> Suspension &amp; Termination</a></li>
+          <li><a href="#terms-warranties"><span class="toc-num">09.</span> Disclaimer of Warranties</a></li>
+          <li><a href="#terms-liability"><span class="toc-num">10.</span> Limitation of Liability</a></li>
+          <li><a href="#terms-changes"><span class="toc-num">11.</span> Changes to These Terms</a></li>
+          <li><a href="#terms-contact"><span class="toc-num">12.</span> Contact Information</a></li>
+          <li><a href="#terms-effective-date"><span class="toc-num">13.</span> Effective Date</a></li>
+        </ul>
+      </nav>
+
       <!-- Terms Sections -->
       <div class="sections-wrapper">
 
-        <!-- 01 -->
+        <!-- 01: Introduction & Acceptance -->
         <article id="terms-acceptance" class="section-card">
           <div class="section-header">
             <span class="section-num">01</span>
@@ -1001,14 +428,17 @@
           </div>
           <div class="section-body">
             <p>Welcome to <strong>VIRUS</strong>, an interactive Discord Activity created and maintained by <strong>VIRUS TEAM</strong> (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;).</p>
-            <p>These Terms of Service (&quot;Terms&quot;) constitute a legally binding contract between you (&quot;you&quot;, &quot;user&quot;, or &quot;player&quot;) and VIRUS TEAM governing your access to and use of the VIRUS Discord Activity.</p>
+            <p>These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;you&quot;, &quot;user&quot;, or &quot;player&quot;) and VIRUS TEAM governing your access to and use of the VIRUS Discord Activity, including any associated features, content, and updates (collectively referred to as the &quot;Activity&quot; or &quot;Application&quot;).</p>
             <div class="notice-box">
               By launching, joining, accessing, or playing the VIRUS Activity within Discord, you explicitly acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must immediately cease accessing and exit the Activity.
             </div>
+            <p>
+              You affirm that you have the legal capacity to enter into these Terms and satisfy the minimum age required by Discord in your jurisdiction (at least 13 years of age or older, depending on local statutory requirements). If you are under the age of majority in your jurisdiction, you represent that your parent or legal guardian has reviewed and agreed to these Terms on your behalf.
+            </p>
           </div>
         </article>
 
-        <!-- 02 -->
+        <!-- 02: Description -->
         <article id="terms-description" class="section-card">
           <div class="section-header">
             <span class="section-num">02</span>
@@ -1016,129 +446,196 @@
           </div>
           <div class="section-body">
             <p><strong>VIRUS</strong> is an interactive digital application designed specifically as a Discord Activity. The application runs embedded directly within Discord voice and text channels via Discord&apos;s embedded application framework, offering interactive gameplay and entertainment experiences for Discord users and community servers.</p>
-            <p>The Activity is engineered solely for personal, non-commercial community entertainment. VIRUS is independently created by VIRUS TEAM and operates through Discord&apos;s platform infrastructure to render inside your Discord client.</p>
+            <p>The Activity is engineered solely for personal, non-commercial community entertainment. VIRUS is independently created by VIRUS TEAM and operates through Discord&apos;s platform infrastructure to render inside your Discord client session.</p>
           </div>
         </article>
 
-        <!-- 03 -->
+        <!-- 03: User Responsibilities -->
         <article id="terms-responsibilities" class="section-card">
           <div class="section-header">
             <span class="section-num">03</span>
-            <h2 class="section-title">User Eligibility and Responsibilities</h2>
+            <h2 class="section-title">User Responsibilities</h2>
           </div>
           <div class="section-body">
-            <p>To access or use the VIRUS Activity, you must:</p>
+            <p>When interacting with the VIRUS Activity, you agree to fulfill the following obligations:</p>
             <ul>
-              <li>Be at least 13 years of age (or the minimum legal age required in your jurisdiction to use Discord, such as 16 in certain European territories).</li>
-              <li>Maintain an active, valid Discord account in full standing with Discord Inc.</li>
-              <li>Adhere strictly to all applicable local, national, and international laws while interacting with the Activity.</li>
+              <li><strong>Account Security:</strong> You are solely responsible for safeguarding the credentials and session of your personal Discord account. Any activity conducted through your Discord account while connected to VIRUS is deemed your responsibility.</li>
+              <li><strong>Platform Connectivity:</strong> You are responsible for acquiring and maintaining the necessary hardware, network connection, software compatibility, and permissions required to run Discord and access the Activity.</li>
+              <li><strong>Respectful Interaction:</strong> You agree to treat all other users, server members, voice participants, and community moderators with respect and fair play while participating in the Activity.</li>
+              <li><strong>Accurate Information:</strong> You agree not to misrepresent your identity, impersonate any person or entity, or falsify affiliations with VIRUS TEAM or Discord moderators.</li>
             </ul>
-            <p>You are solely responsible for all actions, communications, and conduct executed through your Discord account while participating in the VIRUS Activity.</p>
           </div>
         </article>
 
-        <!-- 04 -->
+        <!-- 04: Acceptable and Prohibited Use -->
         <article id="terms-acceptable-use" class="section-card">
           <div class="section-header">
             <span class="section-num">04</span>
-            <h2 class="section-title">Acceptable Use Policy</h2>
+            <h2 class="section-title">Acceptable and Prohibited Use</h2>
           </div>
           <div class="section-body">
-            <p>You agree to interact with the VIRUS Activity with fairness, courtesy, and respect toward other community members. You shall NOT:</p>
+            <p>You agree to use VIRUS solely for its intended lawful entertainment purposes. You agree <strong>not</strong> to engage in any of the following prohibited behaviors:</p>
             <ul>
-              <li>Cheat, exploit bugs, or use unauthorized automation (such as bots, macros, memory injectors, or modified client scripts) to gain unfair gameplay advantages.</li>
-              <li>Interfere with, disrupt, overload, or flood the servers, networks, or WebSocket connections powering the Activity.</li>
-              <li>Harass, intimidate, defame, threaten, impersonate, or direct hate speech toward other players or VIRUS TEAM members.</li>
-              <li>Attempt to reverse-engineer, decompile, or extract proprietary source code or game assets without express permission.</li>
-              <li>Use the Activity for commercial advertising, spamming, phishing, or distribution of malicious software.</li>
+              <li><strong>Exploitation &amp; Cheating:</strong> Exploit, distribute, or publicly promote software bugs, glitches, vulnerabilities, unauthorized modifications, memory injection tools, or exploits to gain an unfair advantage or disrupt gameplay.</li>
+              <li><strong>Reverse Engineering:</strong> Decompile, disassemble, reverse engineer, decrypt, or attempt to derive the source code, underlying algorithms, protocols, or structural architecture of the Activity, except to the extent permitted by mandatory statutory law.</li>
+              <li><strong>Automation &amp; Bots:</strong> Use automated bots, spiders, scrapers, macros, or unauthorized third-party scripts to interact with, spam, extract data from, or manipulate the Activity's sessions or servers.</li>
+              <li><strong>Abusive Conduct:</strong> Harass, stalk, threaten, demean, bully, or transmit hateful, discriminatory, defamatory, obscene, or sexually explicit content toward any user or members of VIRUS TEAM.</li>
+              <li><strong>Malicious Distribution:</strong> Introduce, distribute, or transmit computer viruses, worms, malware, trojan horses, malicious payloads, or harmful computer code through or in connection with the Activity.</li>
+              <li><strong>Service Interference:</strong> Interfere with, flood, overburden, perform denial-of-service (DoS/DDoS) attacks against, or disrupt the servers, networks, APIs, or infrastructure utilized by VIRUS or Discord.</li>
+              <li><strong>Bypassing Protections:</strong> Attempt to circumvent or breach any authentication, rate-limiting, security filters, or session access controls implemented by VIRUS TEAM.</li>
             </ul>
           </div>
         </article>
 
-        <!-- 05 -->
+        <!-- 05: Discord Compliance -->
         <article id="terms-discord" class="section-card">
           <div class="section-header">
             <span class="section-num">05</span>
-            <h2 class="section-title">Compliance with Discord Platform Rules</h2>
+            <h2 class="section-title">Discord Terms of Service &amp; Community Guidelines Compliance</h2>
           </div>
           <div class="section-body">
-            <p>Because the VIRUS Activity is embedded within the Discord ecosystem, your use of VIRUS is conditioned upon strict and ongoing compliance with Discord&apos;s official policies:</p>
+            <p>Because VIRUS operates within the Discord ecosystem as an embedded Activity, your access is strictly contingent upon your adherence to Discord&apos;s official platform policies:</p>
             <ul>
-              <li><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer" style="color: var(--purple-light);">Discord Terms of Service</a></li>
-              <li><a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer" style="color: var(--purple-light);">Discord Community Guidelines</a></li>
-              <li><a href="https://support.discord.com/hc/en-us/articles/4412085582359" target="_blank" rel="noopener noreferrer" style="color: var(--purple-light);">Discord Developer Terms &amp; Policy</a></li>
+              <li>You must strictly abide by the official <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer" style="color: var(--purple-light);">Discord Terms of Service</a> at all times.</li>
+              <li>You must strictly adhere to the official <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer" style="color: var(--purple-light);">Discord Community Guidelines</a> across all sessions and interactions.</li>
+              <li>You must comply with all applicable Discord Developer Terms and Embedded App SDK policies.</li>
             </ul>
             <div class="notice-box">
-              VIRUS TEAM reserves the right to suspend or block any player or Discord server from accessing the VIRUS Activity if found violating Discord&apos;s Community Guidelines or our Acceptable Use Policy.
+              <strong>Critical Clarification:</strong> Any behavior within VIRUS that breaches Discord&apos;s Terms of Service or Community Guidelines constitutes an immediate, material breach of these Terms of Service.
             </div>
+            <p>
+              <strong>Independence Disclaimer:</strong> VIRUS is an independent third-party Discord Activity developed by VIRUS TEAM. VIRUS is not created, owned, managed, affiliated with, sponsored, or endorsed by Discord Inc. Discord Inc. assumes no responsibility or liability for the content, operation, or performance of the VIRUS Activity.
+            </p>
           </div>
         </article>
 
-        <!-- 06 -->
+        <!-- 06: Intellectual Property -->
         <article id="terms-ip" class="section-card">
           <div class="section-header">
             <span class="section-num">06</span>
             <h2 class="section-title">Intellectual Property Rights</h2>
           </div>
           <div class="section-body">
-            <p>All title, ownership, and intellectual property rights in and to the VIRUS Activity—including but not limited to the source code, game mechanics, visual designs, user interfaces, artwork, logos, sound effects, audio, and brand designations—are the exclusive property of <strong>VIRUS TEAM</strong> or its licensors.</p>
-            <p>VIRUS TEAM grants you a limited, revocable, non-exclusive, non-transferable license to access and play the Activity inside Discord for personal, non-commercial entertainment purposes. All rights not expressly granted are reserved.</p>
+            <p>All rights, title, and interest in and to the VIRUS Activity—including but not limited to the software, codebase, visual artwork, character designs, graphical assets, UI elements, audio, sound effects, text, titles, animations, and proprietary branding developed by VIRUS TEAM—are and remain the exclusive intellectual property of VIRUS TEAM and its licensors.</p>
+            <p><strong>Limited License:</strong> Subject to your ongoing compliance with these Terms, VIRUS TEAM grants you a personal, revocable, non-exclusive, non-transferable, non-sublicensable, limited license to access and use VIRUS solely for your personal, non-commercial entertainment within authorized Discord client sessions.</p>
+            <p>You may not copy, reproduce, distribute, publicly display, sell, lease, broadcast, modify, or create derivative works of any part of VIRUS without prior written permission from VIRUS TEAM. All trademarks, service marks, and trade names referenced that belong to third parties (including Discord) remain the property of their respective owners.</p>
           </div>
         </article>
 
-        <!-- 07 -->
+        <!-- 07: Availability and Service Changes -->
         <article id="terms-availability" class="section-card">
           <div class="section-header">
             <span class="section-num">07</span>
-            <h2 class="section-title">Service Availability and Modifications</h2>
+            <h2 class="section-title">Availability and Service Changes</h2>
           </div>
           <div class="section-body">
-            <p>The VIRUS Activity is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. VIRUS TEAM makes no warranties or guarantees regarding uninterrupted operation, speed, or error-free gameplay.</p>
-            <p>We reserve the right to modify, balance, patch, update, suspend, or discontinue the Activity or any specific features at any time without prior notice or liability.</p>
+            <p>VIRUS is provided on an evolving and dynamic basis. VIRUS TEAM reserves the right, at its sole discretion, to:</p>
+            <ul>
+              <li>Update, patch, refine, rebalance, enhance, or alter gameplay mechanics, interfaces, and features.</li>
+              <li>Conduct scheduled or emergency maintenance, which may render the Activity temporarily unavailable.</li>
+              <li>Modify, suspend, or discontinue any feature, server node, or the Activity as a whole, temporarily or permanently, with or without prior notice.</li>
+            </ul>
+            <p>VIRUS TEAM shall not be liable to you or any third party for any modification, suspension, downtime, or discontinuance of the Activity or any part thereof.</p>
           </div>
         </article>
 
-        <!-- 08 -->
-        <article id="terms-disclaimer" class="section-card">
+        <!-- 08: Suspension or Termination -->
+        <article id="terms-termination" class="section-card">
           <div class="section-header">
             <span class="section-num">08</span>
-            <h2 class="section-title">Disclaimer of Warranties and Limitation of Liability</h2>
+            <h2 class="section-title">Suspension or Termination</h2>
           </div>
           <div class="section-body">
-            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, VIRUS TEAM EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
-            <p>IN NO EVENT SHALL VIRUS TEAM BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM OR RELATED TO YOUR USE OF OR INABILITY TO USE THE VIRUS ACTIVITY.</p>
+            <p>VIRUS TEAM reserves the right, without prior notice or liability, to temporarily suspend or permanently terminate your access to the VIRUS Activity, in whole or in part, for any lawful reason, including but not limited to:</p>
+            <ul>
+              <li>Actual or suspected violations of any provision of these Terms.</li>
+              <li>Violations of Discord&apos;s Community Guidelines or Terms of Service.</li>
+              <li>Conduct deemed harmful, disruptive, or malicious toward other players, the community, or VIRUS infrastructure.</li>
+              <li>Requests or orders issued by law enforcement, regulatory authorities, or Discord Inc.</li>
+            </ul>
+            <p>You may stop using the Activity at any time simply by exiting and closing the Activity inside your Discord client. Upon termination, your right to access and use VIRUS immediately ceases. Sections which by their nature should survive termination shall survive.</p>
           </div>
         </article>
 
-        <!-- 09 -->
-        <article id="terms-changes" class="section-card">
+        <!-- 09: Disclaimer of Warranties -->
+        <article id="terms-warranties" class="section-card">
           <div class="section-header">
             <span class="section-num">09</span>
-            <h2 class="section-title">Modifications to the Terms</h2>
+            <h2 class="section-title">Disclaimer of Warranties</h2>
           </div>
           <div class="section-body">
-            <p>VIRUS TEAM reserves the right to amend, replace, or update these Terms of Service at any time. When modifications are made, the revised Terms will be posted to this page with an updated <strong>Effective Date</strong>.</p>
-            <p>Your continued access or use of the VIRUS Activity after any revised Terms take effect constitutes your binding acceptance of the updated Terms.</p>
+            <p>To the maximum extent permitted under applicable law:</p>
+            <div class="caps-box">
+              THE VIRUS DISCORD ACTIVITY IS PROVIDED ENTIRELY ON AN <strong>&quot;AS IS&quot;</strong> AND <strong>&quot;AS AVAILABLE&quot;</strong> BASIS, WITH ALL FAULTS AND DEFECTS, WITHOUT WARRANTY OF ANY KIND. VIRUS TEAM AND ITS CONTRIBUTORS EXPRESSLY DISCLAIM ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, AND WARRANTIES ARISING FROM A COURSE OF DEALING, USAGE, OR TRADE PRACTICE.
+              <br><br>
+              WITHOUT LIMITING THE FOREGOING, VIRUS TEAM MAKES NO REPRESENTATION OR WARRANTY THAT THE ACTIVITY WILL MEET YOUR REQUIREMENTS, ACHIEVE ANY INTENDED RESULTS, BE COMPATIBLE OR WORK UNINTERRUPTED WITH ANY OTHER SOFTWARE OR HARDWARE, OPERATE WITHOUT SERVICE INTERRUPTION, BE SECURE, ERROR-FREE, OR ACCURATE, OR THAT ANY DEFECTS OR BUGS CAN OR WILL BE CORRECTED.
+            </div>
           </div>
         </article>
 
-        <!-- 10 -->
-        <article id="terms-contact" class="section-card">
+        <!-- 10: Limitation of Liability -->
+        <article id="terms-liability" class="section-card">
           <div class="section-header">
             <span class="section-num">10</span>
+            <h2 class="section-title">Limitation of Liability</h2>
+          </div>
+          <div class="section-body">
+            <p>To the fullest extent permitted by applicable law:</p>
+            <div class="caps-box">
+              IN NO EVENT SHALL VIRUS TEAM, ITS DEVELOPERS, CONTRIBUTORS, OPERATORS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE, OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES) ARISING OUT OF OR IN ANY WAY RELATED TO YOUR USE OF, OR INABILITY TO USE, THE VIRUS DISCORD ACTIVITY, REGARDLESS OF THE THEORY OF LIABILITY (WHETHER CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE), EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+              <br><br>
+              IN JURISDICTIONS WHERE THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES IS RESTRICTED, VIRUS TEAM&apos;S LIABILITY SHALL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW.
+            </div>
+          </div>
+        </article>
+
+        <!-- 11: Changes to These Terms -->
+        <article id="terms-changes" class="section-card">
+          <div class="section-header">
+            <span class="section-num">11</span>
+            <h2 class="section-title">Changes to These Terms</h2>
+          </div>
+          <div class="section-body">
+            <p>VIRUS TEAM reserves the right to amend, modify, replace, or update these Terms of Service at any time at our sole discretion.</p>
+            <p>When changes are made, we will update the &quot;Effective Date&quot; at the top and bottom of this document and maintain the revised terms on this publicly accessible page. For material modifications, we may also provide notice within the Activity interface or via our community announcements where practical.</p>
+            <p>Your continued access to or participation in the VIRUS Activity following the publication of any revised Terms constitutes your full acceptance of and agreement to the updated Terms. If you do not agree to the new terms, you must cease using VIRUS.</p>
+          </div>
+        </article>
+
+        <!-- 12: Contact Information -->
+        <article id="terms-contact" class="section-card">
+          <div class="section-header">
+            <span class="section-num">12</span>
             <h2 class="section-title">Contact Information</h2>
           </div>
           <div class="section-body">
-            <p>If you have any questions, inquiries, concerns, or legal notices regarding these Terms of Service or the VIRUS Discord Activity, please reach out to the development team:</p>
+            <p>If you have any questions, inquiries, concerns, or feedback regarding these Terms of Service or the VIRUS Discord Activity, please reach out to VIRUS TEAM at:</p>
 
             <div class="contact-box">
-              <div style="font-size: 1.1rem; font-weight: 800; color: #ffffff; margin-bottom: 6px;">VIRUS TEAM — Developer Contact</div>
-              <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 8px;">For support, inquiries, or notices:</p>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #ffffff; margin-bottom: 6px;">VIRUS TEAM — Developer Inquiries</div>
+              <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 8px;">Official contact address for legal, policy, and user queries:</p>
               <div class="contact-badge">[CONTACT EMAIL]</div>
               <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 8px;">
-                Please replace <code style="color: var(--purple-light); background: #090514; padding: 2px 6px; border-radius: 4px;">[CONTACT EMAIL]</code> with your designated support address when deploying.
+                Please include &quot;VIRUS Terms of Service Inquiry&quot; in the subject line of your email to expedite routing and review.
               </p>
             </div>
+          </div>
+        </article>
+
+        <!-- 13: Effective Date -->
+        <article id="terms-effective-date" class="section-card">
+          <div class="section-header">
+            <span class="section-num">13</span>
+            <h2 class="section-title">Effective Date</h2>
+          </div>
+          <div class="section-body">
+            <p>These Terms of Service were formally established and are effective as of:</p>
+            <p style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 10px 0;">
+              September 18, 2026
+            </p>
+            <p style="color: var(--text-dim); font-size: 0.9rem;">
+              This document supersedes all prior agreements, statements, or representations regarding terms of use for the VIRUS Discord Activity.
+            </p>
           </div>
         </article>
 
@@ -1151,18 +648,17 @@
   <footer>
     <div class="container footer-content">
       <div class="footer-links">
-        <button type="button" onclick="switchDoc('privacy')">Privacy Policy</button>
-        <button type="button" onclick="switchDoc('terms')">Terms of Service</button>
+        <label for="tab-privacy-radio" class="footer-tab-link" role="button" tabindex="0">Privacy Policy</label>
+        <label for="tab-terms-radio" class="footer-tab-link" role="button" tabindex="0">Terms of Service</label>
         <a href="privacy.html">Standalone Privacy</a>
         <a href="terms.html">Standalone Terms</a>
         <a href="https://discord.com" target="_blank" rel="noopener noreferrer">VIRUS Activity</a>
         <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Discord Terms</a>
+        <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Discord Guidelines</a>
       </div>
 
       <p class="footer-copy">
-        VIRUS is an interactive Discord Activity developed and maintained by VIRUS TEAM.<br>
-        Not affiliated with, sponsored by, or endorsed by Discord Inc. &quot;Discord&quot; is a registered trademark of Discord Inc.<br>
-        Effective Date: September 18, 2026. All rights reserved.
+        &copy; 2026 VIRUS TEAM. All rights reserved. VIRUS is an independent Discord Activity developed by VIRUS TEAM and is not affiliated with, endorsed by, or sponsored by Discord Inc.
       </p>
 
       <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn-return" style="margin-top: 6px;">
@@ -1175,49 +671,5 @@
     </div>
   </footer>
 
-  <!-- Vanilla Script for Tabs and Hash Navigation - Zero Build Step -->
-  <script>
-    function switchDoc(doc) {
-      const viewPrivacy = document.getElementById('view-privacy');
-      const viewTerms = document.getElementById('view-terms');
-      const btnPrivacy = document.getElementById('btn-tab-privacy');
-      const btnTerms = document.getElementById('btn-tab-terms');
-
-      if (doc === 'terms') {
-        viewPrivacy.classList.remove('active');
-        viewTerms.classList.add('active');
-        btnPrivacy.classList.remove('active');
-        btnPrivacy.setAttribute('aria-selected', 'false');
-        btnTerms.classList.add('active');
-        btnTerms.setAttribute('aria-selected', 'true');
-        document.title = 'VIRUS - Terms of Service';
-        if (!window.location.hash.startsWith('#terms')) {
-          history.replaceState(null, '', '#terms');
-        }
-      } else {
-        viewTerms.classList.remove('active');
-        viewPrivacy.classList.add('active');
-        btnTerms.classList.remove('active');
-        btnTerms.setAttribute('aria-selected', 'false');
-        btnPrivacy.classList.add('active');
-        btnPrivacy.setAttribute('aria-selected', 'true');
-        document.title = 'VIRUS - Privacy Policy';
-        if (!window.location.hash.startsWith('#priv')) {
-          history.replaceState(null, '', '#privacy');
-        }
-      }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Hash-based routing check on page load
-    window.addEventListener('DOMContentLoaded', () => {
-      const hash = window.location.hash.toLowerCase();
-      if (hash.includes('terms') || hash.includes('acceptance') || hash.includes('responsibilities') || hash.includes('acceptable-use')) {
-        switchDoc('terms');
-      } else {
-        switchDoc('privacy');
-      }
-    });
-  </script>
 </body>
 </html>
